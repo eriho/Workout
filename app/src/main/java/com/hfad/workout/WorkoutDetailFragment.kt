@@ -10,6 +10,7 @@ import android.view.ViewGroup
 
 class WorkoutDetailFragment : Fragment() {
 
+    private lateinit var workoutId : Long
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -18,5 +19,8 @@ class WorkoutDetailFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_workout_detail, container, false)
     }
 
+    fun setWorkout(id:Long){
+        this.workoutId = id
+    }
 
 }
