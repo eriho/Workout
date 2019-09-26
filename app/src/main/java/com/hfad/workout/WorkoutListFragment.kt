@@ -21,7 +21,7 @@ class WorkoutListFragment : ListFragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        var names = arrayOfNulls<String>(workouts.size)
+        val names = arrayOfNulls<String>(workouts.size)
         for (i in 0..workouts.size) {
             names[i] = workouts[i].name
         }
